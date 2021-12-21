@@ -14,7 +14,7 @@ export default function Home({ repositories }) {
       description="Starting template of Developer Portfolio/blog"
     >
       <Hero />
-      <FavouriteProjects />
+      {/* <FavouriteProjects /> */}
       <LatestCode repositories={repositories} />
     </ContainerBlock>
   );
