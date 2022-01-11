@@ -106,8 +106,8 @@ export default function AboutMe() {
               using software to help improve lives.
             </p>
             <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-              When I'm not coding, you can find me at the gym, curled up with a
-              good (or sometimes bad) sci-fi novel, or crafting new adventures
+              When I'm not coding, you can find me out for a run, curled up with
+              a good (or sometimes bad) sci-fi novel, or crafting new adventures
               for my D&D campaigns ⚔️🤓
             </p>
             <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
