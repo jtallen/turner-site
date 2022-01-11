@@ -52,9 +52,10 @@ const userData = {
     title:
       "Software engineer with two years of full-time experience. I’ve worked across the stack, but especially enjoy building front-end experiences that help and delight people.",
     description: [
-      `Some more info about me ;)`,
-      `This is the perfect place to include some more info about me!`,
-      `I know how to code!`,
+      `👋🏼 Hi there! I'm Turner. Welcome to my site 🙂`,
+      `I'm a professional software engineer with two years' full-stack experience building web and mobile apps. I'm especially inspired by the positive impact possible at the intersection of tech, government, and civic engagement, but can find joy in any cause using software to help improve lives.`,
+      `When I'm not coding, you can find me at the gym, curled up with a good (or sometimes bad) sci-fi novel, or crafting new adventures for my D&D campaigns ⚔️🤓`,
+      `🙋‍♂️ I'm looking for a job! I thrive in environments with humble, curious, kind folks. If you think I might be a fit, please REACH OUT - I'd love to hear from you.`,
     ],
     currentProject: "my Personal Site",
     currentProjectUrl: "https://turner-site-green.vercel.app",
@@ -104,7 +105,7 @@ const userData = {
     },
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
+    "https://drive.google.com/file/d/1z_psbsrkvQguv3kTKqcO2-UMO0vvvWYA/view?usp=sharing",
   socialLinks: {
     instagram: "https://instagram.com/jturnerallen",
     twitter: "https://twitter.com/804native",
