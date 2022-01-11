@@ -132,9 +132,9 @@ export default function AboutMe() {
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              {/* Java */}
+              {/* ReactJS */}
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                 className="h-20 w-20 mx-4 my-4"
               />
               {/* HTML 5 */}
@@ -152,24 +152,39 @@ export default function AboutMe() {
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
                 className="h-20 w-20 mx-4 my-4"
               />
+              {/* NextJS */}
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
+                src="https://user-images.githubusercontent.com/6580472/149031967-be05cb15-0fb5-4c72-93aa-aef907714676.png"
                 className="h-20 w-20 mx-4 my-4"
               />
+              {/* Java */}
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+                src="https://user-images.githubusercontent.com/6580472/149032395-540dc9a6-896b-41df-b774-280fdc7ef484.jpeg"
                 className="h-20 w-20 mx-4 my-4"
               />
+              {/* Spring */}
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
+                src="https://user-images.githubusercontent.com/6580472/149035029-c973b3d7-e2d9-4361-92a8-3443172e5665.png"
                 className="h-20 w-20 mx-4 my-4"
               />
+              {/* Python */}
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
+                src="https://user-images.githubusercontent.com/6580472/149033328-fc29dda8-00dd-4564-8ff7-5b2641913f41.png"
                 className="h-20 w-20 mx-4 my-4"
               />
+              {/* Git */}
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+                src="https://user-images.githubusercontent.com/6580472/149033594-df337c7f-248d-4962-ae8c-b4f4fefd8de9.png"
+                className="object-contain w-20 mx-4 my-4"
+              />
+              {/* Hasura */}
+              <img
+                src="https://user-images.githubusercontent.com/6580472/149032853-69952e1e-30b3-47b9-8366-b404ee914afc.png"
+                className="h-20 w-20 mx-4 my-4"
+              />
+              {/* GraphQL */}
+              <img
+                src="https://user-images.githubusercontent.com/6580472/149034752-792d0214-647f-4169-beb6-aaa75e4dab0e.png"
                 className="h-20 w-20 mx-4 my-4"
               />
             </div>
