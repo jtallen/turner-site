@@ -95,14 +95,33 @@ export default function AboutMe() {
           </div>
           {/* Text area */}
           <div className="col-span-1 md:col-span-2">
-            {userData.about.description?.map((desc, idx) => (
-              <p
-                key={idx}
-                className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
+            <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
+              👋🏼 Hi there! I'm Turner. Welcome to my site 🙂
+            </p>
+            <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
+              I'm a professional software engineer with two years' full-stack
+              experience building web and mobile apps. I'm especially inspired
+              by the positive impact possible at the intersection of tech,
+              government, and civic engagement, but can find joy in any cause
+              using software to help improve lives.
+            </p>
+            <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
+              When I'm not coding, you can find me at the gym, curled up with a
+              good (or sometimes bad) sci-fi novel, or crafting new adventures
+              for my D&D campaigns ⚔️🤓
+            </p>
+            <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
+              🙋‍♂️ <strong>I'm looking for a job!</strong> I thrive in
+              environments with humble, curious, kind folks. If you think I
+              might be a fit, please{" "}
+              <a
+                href="mailto:jturnerallen@gmail.com"
+                className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
               >
-                {desc}
-              </p>
-            ))}
+                reach out
+              </a>{" "}
+              - I'd love to hear from you.
+            </p>
 
             <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               Tech Stack
