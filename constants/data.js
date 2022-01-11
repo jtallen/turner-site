@@ -49,14 +49,15 @@ const userData = {
     },
   ],
   about: {
-    title: "I'm a software engineer... [pull from resume]",
+    title:
+      "Software engineer with two years of full-time experience. I’ve worked across the stack, but especially enjoy building front-end experiences that help and delight people.",
     description: [
       `Some more info about me ;)`,
       `This is the perfect place to include some more info about me!`,
       `I know how to code!`,
     ],
-    currentProject: "Tailwind Master Kit",
-    currentProjectUrl: "https://tailwindmasterkit.com",
+    currentProject: "my Personal Site",
+    currentProjectUrl: "https://turner-site-green.vercel.app",
   },
   experience: [
     {
