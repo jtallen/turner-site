@@ -38,7 +38,7 @@ export default function AboutMe() {
                 For any questions or inquiries, please reach out to me via{" "}
                 <a
                   href={`mailto:${userData.email}`}
-                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                  className="hover:border-indigo-500 hover:text-indigo-500 transition-all text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
                   email
                 </a>{" "}
@@ -55,7 +55,7 @@ export default function AboutMe() {
                 <a
                   href={userData.resumeUrl}
                   target="__blank"
-                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                  className="hover:border-indigo-500 hover:text-indigo-500 transition-all text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
                   Resume
                 </a>
@@ -116,7 +116,7 @@ export default function AboutMe() {
               might be a fit, please{" "}
               <a
                 href="mailto:jturnerallen@gmail.com"
-                className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                className="hover:border-indigo-500 hover:text-indigo-500 transition-alltext-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
               >
                 reach out
               </a>{" "}
@@ -127,65 +127,89 @@ export default function AboutMe() {
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
-              {/* Javascript */}
+              {/* JavaScript */}
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 className="h-20 w-20 mx-4 my-4"
+                alt="JavaScript"
+                title="JavaScript"
               />
               {/* ReactJS */}
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                 className="h-20 w-20 mx-4 my-4"
+                alt="ReactJS"
+                title="ReactJS"
               />
               {/* HTML 5 */}
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
                 className="h-20 w-20 mx-4 my-4"
+                alt="HTML5"
+                title="HTML5"
               />
               {/* CSS3 */}
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
                 className="h-20 w-20 mx-4 my-4"
+                alt="CSS3"
+                title="CSS3"
               />
               {/* Angular */}
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
                 className="h-20 w-20 mx-4 my-4"
+                alt="Angular"
+                title="Angular"
               />
               {/* NextJS */}
               <img
                 src="https://user-images.githubusercontent.com/6580472/149031967-be05cb15-0fb5-4c72-93aa-aef907714676.png"
                 className="h-20 w-20 mx-4 my-4"
+                alt="Next.js"
+                title="Next.js"
               />
               {/* Java */}
               <img
                 src="https://user-images.githubusercontent.com/6580472/149032395-540dc9a6-896b-41df-b774-280fdc7ef484.jpeg"
                 className="h-20 w-20 mx-4 my-4"
+                alt="Java"
+                title="Java"
               />
               {/* Spring */}
               <img
                 src="https://user-images.githubusercontent.com/6580472/149035029-c973b3d7-e2d9-4361-92a8-3443172e5665.png"
                 className="h-20 w-20 mx-4 my-4"
+                alt="Spring"
+                title="Spring"
               />
               {/* Python */}
               <img
                 src="https://user-images.githubusercontent.com/6580472/149033328-fc29dda8-00dd-4564-8ff7-5b2641913f41.png"
                 className="h-20 w-20 mx-4 my-4"
+                alt="Python"
+                title="Python"
               />
               {/* Git */}
               <img
                 src="https://user-images.githubusercontent.com/6580472/149033594-df337c7f-248d-4962-ae8c-b4f4fefd8de9.png"
                 className="object-contain w-20 mx-4 my-4"
+                alt="Git"
+                title="Git"
               />
               {/* Hasura */}
               <img
                 src="https://user-images.githubusercontent.com/6580472/149032853-69952e1e-30b3-47b9-8366-b404ee914afc.png"
                 className="h-20 w-20 mx-4 my-4"
+                alt="Hasura"
+                title="Hasura"
               />
               {/* GraphQL */}
               <img
                 src="https://user-images.githubusercontent.com/6580472/149034752-792d0214-647f-4169-beb6-aaa75e4dab0e.png"
                 className="h-20 w-20 mx-4 my-4"
+                alt="GraphQL"
+                title="GraphQL"
               />
             </div>
           </div>
