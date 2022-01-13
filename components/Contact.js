@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import userData from "@constants/data";
 
+// Note: reference - delete before final pull request
 // class MyComponent extends React.Component {
 //   constructor(props) {
 //     super(props);
