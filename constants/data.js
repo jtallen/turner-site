@@ -60,7 +60,7 @@ const userData = {
       company: "Full Stack Engineer",
       year: "2021",
       companyLink: "",
-      desc: 'Led design & development for Sludge Snap, an ML-powered mobile web app to provide realtime image sample analysis to waste workers in the field. Not sexy, but hey: I\'ll take "helps people" over "sounds cool" any day 😉',
+      desc: 'Led design & development for Sludge Snap, an ML-powered mobile web app to provide realtime image sample analysis to waste workers in the field. Not the most flashy project, but hey: I\'ll take "helps people" over "sounds cool" any day 😉',
     },
     {
       title: "CS @ VCU",
