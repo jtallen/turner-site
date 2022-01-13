@@ -1,7 +1,109 @@
-import React from "react";
+import React, { useState } from "react";
 import userData from "@constants/data";
 
+// class MyComponent extends React.Component {
+//   constructor(props) {
+//     super(props);
+
+//     this.state = {
+//       open: false,
+//     };
+//   }
+
+//   render() {
+//     const setOpen = (value) => this.state.setState({ open: value });
+//     return (
+//       <div>
+//         <button onClick={() => this.setState({ open: !this.state.open })}>
+//           {this.state.open ? "close" : "open"}
+//         </button>
+//         {this.state.open
+//           ? this._renderConfirmationMessage()
+//           : this._renderForm()}
+//       </div>
+//     );
+//   }
+
+//   _renderForm() {
+//     return <div></div>;
+//   }
+
+//   _renderConfirmationMessage() {
+//     return <div></div>;
+//   }
+// }
+
+function ContactForm(props) {
+  return (
+    <form
+      className="form rounded-lg bg-white p-4 flex flex-col"
+      onSubmit={props.onSubmit}
+    >
+      <label htmlFor="name" className="text-sm text-gray-600 mx-4">
+        {" "}
+        Your Name
+      </label>
+      <input
+        type="text"
+        className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+        name="name"
+      />
+      <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
+        Email
+      </label>
+      <input
+        type="text"
+        className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+        name="email"
+      />
+      <label htmlFor="message" className="text-sm text-gray-600 mx-4 mt-4">
+        Message
+      </label>
+      <textarea
+        rows="4"
+        type="text"
+        className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+        name="message"
+      ></textarea>
+      <button
+        type="submit"
+        className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+      >
+        Send Message
+      </button>
+    </form>
+  );
+}
+
+function ContactFormSent() {
+  return (
+    <div className="rounded-lg bg-white p-4 flex flex-col items-center py-24">
+      <h1 className="text-3xl font-semibold">Thanks for reaching out! 👋🏼</h1>
+      <p className="text-justify text-xl mx-4 my-16 border-t-2 border-b-2 border-[#02044A] p-2">
+        Unless I'm incapacitated 🤕 or travelling ✈️ you should hear from me
+        within the week!
+      </p>
+    </div>
+  );
+}
+
 export default function Contact() {
+  const [isSent, setIsSent] = useState(false);
+  // const result = useState(false)
+  // const isOpen = result[0]
+  // const setOpen = result[1]
+
+  const handleSubmit = (e) => {
+    console.log(e);
+    e.preventDefault();
+
+    const name = e.target.elements.name.value;
+    const email = e.target.elements.email.value;
+    const message = e.target.elements.message.value;
+
+    setIsSent(true);
+  };
+
   return (
     <section>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
@@ -14,10 +116,10 @@ export default function Contact() {
           <div className="md:ml-4">
             <header className="">
               <h1 className="text-gray-50 font-semibold text-2xl">
-                Get in touch, let's talk.
+                Interested in talking? <br></br> I'd love to hear from you!
               </h1>
               <p className="font-light text-base text-gray-200 mt-2">
-                Fill in the details and I'll get back to you as soon as I can.
+                Fill in your info and I'll get back to you as soon as I can.
               </p>
             </header>
             <div className="icons-container inline-flex flex-col my-20">
@@ -72,7 +174,7 @@ export default function Contact() {
             </div>
             <div className="social-icons flex flex-row space-x-8">
               <a
-                href={userData.socialLinks.facebook}
+                href={userData.socialLinks.github}
                 className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
               >
                 <svg
@@ -84,13 +186,15 @@ export default function Contact() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
                     fill="currentColor"
                   />
                 </svg>
               </a>
               <a
-                href={userData.socialLinks.twitter}
+                href={userData.socialLinks.linkedin}
                 className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
               >
                 <svg
@@ -101,83 +205,23 @@ export default function Contact() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </a>
-              <a
-                href={userData.socialLinks.instagram}
-                className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  className="text-gray-50"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
-                    fill="currentColor"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
-                    fill="currentColor"
-                  />
+                  <g fill="none">
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161V2.838zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388zm-5.5 10.403h3.208V9.25H4.208v10.54zM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0z"
+                      fill="currentColor"
+                    />
+                  </g>
                 </svg>
               </a>
             </div>
           </div>
-          <form className="form rounded-lg bg-white p-4 flex flex-col">
-            <label htmlFor="name" className="text-sm text-gray-600 mx-4">
-              {" "}
-              Your Name
-            </label>
-            <input
-              type="text"
-              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-              name="name"
-            />
-            <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
-              Email
-            </label>
-            <input
-              type="text"
-              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-              name="email"
-            />
-            <label
-              htmlFor="message"
-              className="text-sm text-gray-600 mx-4 mt-4"
-            >
-              Message
-            </label>
-            <textarea
-              rows="4"
-              type="text"
-              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-              name="message"
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
-            >
-              Send Message
-            </button>
-          </form>
+          {isSent ? (
+            <ContactFormSent />
+          ) : (
+            <ContactForm onSubmit={handleSubmit} />
+          )}
         </div>
       </div>
     </section>
