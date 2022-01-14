@@ -1,38 +1,6 @@
 import React, { useState } from "react";
 import userData from "@constants/data";
-
-// Note: reference - delete before final pull request
-// class MyComponent extends React.Component {
-//   constructor(props) {
-//     super(props);
-
-//     this.state = {
-//       open: false,
-//     };
-//   }
-
-//   render() {
-//     const setOpen = (value) => this.state.setState({ open: value });
-//     return (
-//       <div>
-//         <button onClick={() => this.setState({ open: !this.state.open })}>
-//           {this.state.open ? "close" : "open"}
-//         </button>
-//         {this.state.open
-//           ? this._renderConfirmationMessage()
-//           : this._renderForm()}
-//       </div>
-//     );
-//   }
-
-//   _renderForm() {
-//     return <div></div>;
-//   }
-
-//   _renderConfirmationMessage() {
-//     return <div></div>;
-//   }
-// }
+import emailjs from "@emailjs/browser";
 
 function ContactForm(props) {
   return (
@@ -90,19 +58,24 @@ function ContactFormSent() {
 
 export default function Contact() {
   const [isSent, setIsSent] = useState(false);
-  // const result = useState(false)
-  // const isOpen = result[0]
-  // const setOpen = result[1]
 
   const handleSubmit = (e) => {
-    console.log(e);
     e.preventDefault();
 
     const name = e.target.elements.name.value;
     const email = e.target.elements.email.value;
     const message = e.target.elements.message.value;
 
-    setIsSent(true);
+    emailjs
+      .send(userData.serviceID, userData.templateID, { name, email, message })
+      .then((res) => {
+        console.log("Email successfully sent!");
+        setIsSent(true);
+      })
+      .catch((err) => {
+        console.error("Oh no! Oh woe is me! The email has fail't!", err);
+        setIsSent(true);
+      });
   };
 
   return (
