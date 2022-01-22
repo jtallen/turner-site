@@ -1,76 +1,78 @@
-## Portfolio Website For Developers 💯
-
-**UPDATE:**
-
-
-1. Wrote a detailed blog on [freeCodeCamp](https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-nextjs-tailwindcss/), describing and explaining how I built this application from the ground up.
-
-2. Included the `constants` folder, where you can directly add your details and it'll get reflected throughout the application. No more customizations for the template required, just add your data and it'll reflect immediately.
-
-Portfolio for developers is a simple and minimalistic website to showcase your skills and projects as a developer. The design is inspired by [Kevin Clark](https://kevinclark.ca). The website is completely Open Source, you can use it for whatever purpose you want.
-
-![HomeGif](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/websitegif.gif)
+## Portfolio Website for Turner Allen
 
 # Features
 
-- Responsive layout, works well on both Mobile and Desktop
-- Dark mode support. Click buttons to toggle dark mode and light mode.
-- Clear React components and tailwind styling.
-- Exact sections that a developer needs to showcase their skills.
-- Clear call to actions.
+- Responsive layout.
+- Dark mode support - toggle button on NavBar.
+- Project/professional experience showcase.
+- Contact me form/call to action.
 
 # Pages
 
 I've kept the pages as simple as possible. Only the required sections are included with minimal content.
 
-## Landing
+<!-- Note: The following sections use h3 subheaders, if I add pictures back in, I should consider using h2 subheaders. -->
 
+### Landing
+
+This page is the entrance to my site. It serves to offer a jumping-off point to learn more about me and what I've worked on. Thanks for visiting!
+
+<!--
+# Remove completely or replace with pictures of my own
 ![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/home.png)
+-->
 
-## About
+### About
 
+This page contains information about my interests and my professional strengths, including the technologies I am familiar with and the areas that I am excited about.
+
+<!--
+# Remove completely or replace with pictures of my own
 ![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/about.png)
+-->
 
-## Projects
+### Projects
 
+This page is under construction and isn't currently available on the site. It will include a list and explanation of each of the projects that I have personally been involved in, including personal pursuits, apps created during hackathons, and projects that I worked on with a small team.
+
+<!--
+# Remove completely or replace with pictures of my own
 ![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/projects.png)
+-->
 
-## Experience
+### Experience
 
+This page offers a timeline of my technical experience, including professional history and education.
+
+<!--
+# Remove completely or replace with pictures of my own
 ![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/experience.png)
+-->
 
-## Contact
+### Contact
 
+This page includes links to my various public profiles, including [GitHub](https://github.com/jtallen) and [LinkedIn](https://www.linkedin.com/in/jturnerallen/). It also offers the ability to leave your contact information by filling out a form, which is then emailed to me using [EmailJS](https://www.emailjs.com/).
+
+<!--
+# Remove completely or replace with pictures of my own
 ![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/contact.png)
+-->
 
 # Tech Stack
 
-The website is built in my favourite Tech Stack and deployed on [Vercel](https://vercel.com)
+This website is built using some of the newer technologies that I am excited about:
 
-- [Next.js](https://nextjs.org) for building React Components.
+- [Next.js](https://nextjs.org) for my React framework.
 - [tailwindcss](https://tailwindcss.com) for styling.
-- [React Rough Notation](https://roughnotation.com) for Hero section highlighting.
-- [Vercel](https://vercel.com) for deployments and CI/CD.
+- [Vercel](https://vercel.com) for deployment and CI/CD.
+- [EmailJS](https://www.emailjs.com/) for third-party email functionality.
 
 # Usage
 
-- Clone the repository using `git clone https://github.com/manuarora700/simple-developer-portfolio-website.git`
-- Install all the modules by using `npm i` or `npm install` or `yarn`
-- Run the local development server by using `npm run dev` or `yarn dev`
-- Make the required edits and deploy to YOUR GitHub repo for CI/CD.
+- Clone the repository using `git clone https://github.com/jtallen/turner-site.git`
+- Install modules using `npm install` or `yarn`
+- Run local development server using `npm run dev` or `yarn dev`
 
 # Deployment
 
-Deployment can be done in 3 easy steps.
-
-- Login to [Vercel](https://vercel.com) or signup for an account if you don't have one.
-- Create a `New Project` and select YOUR GitHub repository of the portfolio project.
-- Wait for Vercel to deploy your project to production.
-
-# License
-
-This template is completely open source and free to use. Use it for client projects or your own portfolio project. Give me credits at the footer (If you wish, it'll help me a lot :)).
-
-# Support
-
-<a href="https://www.buymeacoffee.com/manuarora" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+Deployment is accomplished using [Vercel](https://vercel.com), which deploys directly from this GitHub repo and automatically re-deploys after every push. Try it out - it's free, and great!
