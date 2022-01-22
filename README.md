@@ -9,8 +9,6 @@
 
 # Pages
 
-I've kept the pages as simple as possible. Only the required sections are included with minimal content.
-
 <!-- Note: The following sections use h3 subheaders, if I add pictures back in, I should consider using h2 subheaders. -->
 
 ### Landing
