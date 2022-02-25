@@ -1,8 +1,11 @@
 import React from 'react';
 import userData from '@constants/data';
 import ProjectCard from './ProjectCard';
+import { useSelector } from 'react-redux';
 
 const Projects = () => {
+  const projects = useSelector((state) => state.projects);
+
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
@@ -11,7 +14,7 @@ const Projects = () => {
         </h1>
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 p-10 grid grid-cols-1 md:grid-cols-2">
-        {userData.projects.map((project) => (
+        {projects.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
       </div>
