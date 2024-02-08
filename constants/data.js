@@ -34,8 +34,15 @@ const userData = {
   },
   experience: [
     {
-      title: 'Sludge Snap',
-      company: 'Full Stack Engineer',
+      title: 'Software Engineer, Node.js',
+      company: 'Hotel Engine',
+      year: '2022-2023',
+      companyLink: 'https://www.hotelengine.com/',
+      desc: 'Worked on the back end for the hotel supply team, primarily used TypeScript to handle integrations and reservation business logic. Was responsible for scoping and executing on multiple large refactors to older integrations, allowing them to receive necessary modern business configuration.',
+    },
+    {
+      title: 'Full Stack Engineer',
+      company: 'Sludge Snap',
       year: '2021',
       companyLink: '',
       desc: 'Led design & development for Sludge Snap, an ML-powered mobile web app to provide realtime image sample analysis to waste workers in the field. Not the most flashy project, but hey: I\'ll take "helps people" over "sounds cool" any day 😉',
