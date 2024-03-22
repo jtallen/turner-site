@@ -1,5 +1,5 @@
-import React from "react";
-import userData from "@constants/data";
+import React from 'react';
+import userData from '@constants/data';
 
 export default function AboutMe() {
   return (
@@ -13,10 +13,10 @@ export default function AboutMe() {
         <div className="text-container max-w-6xl mx-auto pt-20">
           <p
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
-            style={{ lineHeight: "3rem" }}
+            style={{ lineHeight: '3rem' }}
           >
             {userData.about.title} <br />
-            Currently working on{" "}
+            Currently working on{' '}
             <a
               className="bg-red-500 rounded-md px-2 py-1 text-white"
               href={userData.about.currentProjectUrl}
@@ -35,13 +35,13 @@ export default function AboutMe() {
                 Contact
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                For any questions or inquiries, please reach out to me via{" "}
+                For any questions or inquiries, please reach out to me via{' '}
                 <a
                   href={`mailto:${userData.email}`}
                   className="hover:border-indigo-500 hover:text-indigo-500 transition-all text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
                   email
-                </a>{" "}
+                </a>{' '}
                 and I will get back to you as soon as I can!
               </p>
             </div>
@@ -51,7 +51,7 @@ export default function AboutMe() {
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 I am currently searching for a job! If you are hiring and
-                interested in learning more about me, please check out my{" "}
+                interested in learning more about me, please check out my{' '}
                 <a
                   href={userData.resumeUrl}
                   target="__blank"
@@ -59,7 +59,7 @@ export default function AboutMe() {
                 >
                   Resume
                 </a>
-                {", "}thanks!
+                {', '}thanks!
               </p>
             </div>
             {/* Social Links */}
@@ -113,13 +113,13 @@ export default function AboutMe() {
             <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
               🙋‍♂️ <strong>I'm looking for a job!</strong> I thrive in
               environments with humble, curious, kind folks. If you think I
-              might be a fit, please{" "}
+              might be a fit, please{' '}
               <a
                 href="mailto:jturnerallen@gmail.com"
                 className="hover:border-indigo-500 hover:text-indigo-500 transition-alltext-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
               >
                 reach out
-              </a>{" "}
+              </a>{' '}
               - I'd love to hear from you.
             </p>
 
@@ -127,12 +127,12 @@ export default function AboutMe() {
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
-              {/* JavaScript */}
+              {/* TypeScript */}
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                src="https://github.com/jtallen/turner-site/assets/6580472/aa528a20-c958-4103-9be6-f5678a9e72a7"
                 className="h-20 w-20 mx-4 my-4"
-                alt="JavaScript"
-                title="JavaScript"
+                alt="TypeScript"
+                title="TypeScript"
               />
               {/* ReactJS */}
               <img
@@ -141,19 +141,19 @@ export default function AboutMe() {
                 alt="ReactJS"
                 title="ReactJS"
               />
-              {/* HTML 5 */}
+              {/* NodeJS */}
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
+                src="https://github.com/jtallen/turner-site/assets/6580472/3312424f-8932-49f7-a6de-7a032ba1fc05"
                 className="h-20 w-20 mx-4 my-4"
-                alt="HTML5"
-                title="HTML5"
+                alt="NodeJS"
+                title="NodeJS"
               />
-              {/* CSS3 */}
+              {/* AWS */}
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
+                src="https://github.com/jtallen/turner-site/assets/6580472/3205cb53-e2e5-426c-bf3a-aa7e8e4d5b39"
                 className="h-20 w-20 mx-4 my-4"
-                alt="CSS3"
-                title="CSS3"
+                alt="AWS"
+                title="AWS"
               />
               {/* Angular */}
               <img
