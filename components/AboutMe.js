@@ -99,9 +99,9 @@ export default function AboutMe() {
               👋🏼 Hi there! I'm Turner. Welcome to my site 🙂
             </p>
             <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-              I'm a professional software engineer with two years' full-stack
-              experience building web and mobile apps. I'm especially inspired
-              by the positive impact possible at the intersection of tech,
+              I'm a professional software engineer with three years' full time
+              experience working across the stack. I'm especially inspired by
+              the positive impact possible at the intersection of tech,
               government, and civic engagement, but can find joy in any cause
               using software to help improve lives.
             </p>

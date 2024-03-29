@@ -28,7 +28,7 @@ const userData = {
   ],
   about: {
     title:
-      'Software engineer with two years of full-time experience. I’ve worked across the stack, but especially enjoy building front-end experiences that help and delight people.',
+      "Software engineer with three years of full-time experience. I've worked across the stack, but especially enjoy shaping and improving well-designed back end systems.",
     currentProject: 'my Personal Site',
     currentProjectUrl: 'https://turner-site-green.vercel.app',
   },
