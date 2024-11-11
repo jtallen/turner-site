@@ -70,7 +70,7 @@ const userData = {
     },
   ],
   resumeUrl:
-    'https://drive.google.com/file/d/1z_psbsrkvQguv3kTKqcO2-UMO0vvvWYA/view?usp=sharing',
+    'https://drive.google.com/file/d/1zOC8Y_iiW0fu3WoZwvSbUE-xtKcQT8My/view',
   socialLinks: {
     instagram: 'https://instagram.com/jturnerallen',
     twitter: 'https://twitter.com/804native',
