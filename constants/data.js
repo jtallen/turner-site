@@ -5,7 +5,7 @@ const userData = {
   avatarUrl: '/avatar.png',
   email: 'jturnerallen@gmail.com',
   phone: '+1 8042295228',
-  address: 'San Francisco, USA.',
+  address: 'San Francisco, USA',
   templateID: 'template_vyfd4cn',
   serviceID: 'service_mfo3p98',
   projects: [
@@ -70,7 +70,7 @@ const userData = {
     },
   ],
   resumeUrl:
-    'https://drive.google.com/file/d/1z_psbsrkvQguv3kTKqcO2-UMO0vvvWYA/view?usp=sharing',
+    'https://drive.google.com/file/d/1zOC8Y_iiW0fu3WoZwvSbUE-xtKcQT8My/view',
   socialLinks: {
     instagram: 'https://instagram.com/jturnerallen',
     twitter: 'https://twitter.com/804native',
