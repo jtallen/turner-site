@@ -1,6 +1,10 @@
 import userData from "@constants/data";
 
 export default function LatestCode({ repositories = [] }) {
+  if (repositories.length === 0) {
+    return null;
+  }
+
   return (
     <section className="bg-[#F1F1F1] md:-mt-40 dark:bg-gray-900 pb-40">
       <div className="max-w-6xl mx-auto">
