@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="w-full md:w-3/5 mx-auto text-right md:text-left lg:p-20">
         <RoughNotationGroup show={true}>
           <h1 className="text-right text-4xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
-            I build systems that solve the problems that matter
+            Building systems that solve the problems that matter
           </h1>
         </RoughNotationGroup>
       </div>
